@@ -53,10 +53,7 @@ Semua kalangan : <br/>
 
 <!-- Mockup Kasar -->
 ## Mockup Kasar
-
-TO;DO
-
-Gambar mockup di sini atau [link figma](https://figma.com/).
+Link[link figma](https://www.figma.com/file/SalAtujN8VCe1IEfg5KERa/Ui-UX-Pemweb?node-id=0%3A1).
 
 <!-- Skema Database -->
 ## Skema Database
