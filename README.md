@@ -39,9 +39,9 @@
 TO;DO
 
 <!-- Tujuan -->
+## Tujuan
 Pembuatan website ini bertujuan untuk membantu masyarakat guna mencapai "Financial Freedom". Karena kami sadar, bahwa masyarakat Indonesia tidak semuanya melek akan pentingnya pengelolaan keuangan yang baik. Dan tentunya dengan harapan bisa meningkatkan kesadaan masyarakat mengenai investasi. Yang jika dilihat akan menimbulkan banyak benefit, khususnya untuk individu dan secara umum untuk Indonesia.
 
-TO;DO
 
 <!-- Target Pengguna -->
 ## Target Pengguna
