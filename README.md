@@ -45,7 +45,10 @@ TO;DO
 
 <!-- Target Pengguna -->
 ## Target Pengguna
-
+Semua kalangan :
+-> Yang sedang menyiapkan Dana Pensiun
+-> Yang ingin belajar mengatur keuangan
+-> Yang ingin belajar Investasi 
 TO;DO
 
 <!-- Mockup Kasar -->
