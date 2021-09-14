@@ -58,4 +58,6 @@ Link  : [link figma](https://www.figma.com/file/SalAtujN8VCe1IEfg5KERa/Ui-UX-Pem
 <!-- Skema Database -->
 ## Skema Database
 
-TO;DO
+<a href="https://github.com/github_username/repo_name">
+    <img src="tabelsmnt.jpeg" alt="Logo" width="100" height="85">
+  </a>
