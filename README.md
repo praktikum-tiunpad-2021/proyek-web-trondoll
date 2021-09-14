@@ -8,7 +8,7 @@
   <h3 align="center">Kambefinance</h3>
 
   <p align="center">
-    Deskripsi Proyek
+    Amankan masa depan keuangan Anda.
   </p>
 </p>
 
