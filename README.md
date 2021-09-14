@@ -53,7 +53,7 @@ Semua kalangan : <br/>
 
 <!-- Mockup Kasar -->
 ## Mockup Kasar
-Link[link figma](https://www.figma.com/file/SalAtujN8VCe1IEfg5KERa/Ui-UX-Pemweb?node-id=0%3A1).
+Link  : [link figma](https://www.figma.com/file/SalAtujN8VCe1IEfg5KERa/Ui-UX-Pemweb?node-id=0%3A1).
 
 <!-- Skema Database -->
 ## Skema Database
