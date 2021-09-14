@@ -35,8 +35,9 @@
 
 <!-- Fungsi -->
 ## Fungsi
-
-TO;DO
+-> Membantu dalam pengelolaan keuangan <br>
+-> Menyediakan sarana pembelajaran mengenai investasi <br>
+-> Memberikan solusi terhadap permasalahan keuangan <br>
 
 <!-- Tujuan -->
 ## Tujuan
