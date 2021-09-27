@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 * {
     margin: 0;
@@ -7,6 +7,41 @@
 
 body {
     background-color: #304658;
+}
+
+.nav-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+}
+
+nav a:hover {
+    font-weight: bold;    
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    width: 40%;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;  
+}
+
+.logo {
+    width: 100px;
+    display: inline-block;
+    padding: 20px;
 }
 
 .card {
