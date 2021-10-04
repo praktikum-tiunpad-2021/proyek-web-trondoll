@@ -1,0 +1,74 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #304658 ;
+    color: #304658;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+
+.main{
+    position: absolute;
+    border-radius: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    background-color: #E2F3F4;
+    padding: 40px;
+    box-sizing: border-box;
+    border: 1px solid #333;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+
+.main p{
+    margin: 0;
+}
+
+.main h2{
+    margin: 0 40px;
+    padding: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+}
+
+.main input{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 20px;
+}
+
+.main input{
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #304658;
+}
+
+.sign-in-button input[type=submit] {
+    background-color: #5098A8;
+    font-size: 15px;
+    width: 50%;
+    display: block;
+    margin: 10px auto 10px auto;
+    color: #304658;
+    padding: 12px 10px;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+}
+
+.logo img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+    width: 50%; 
+
+}
+
