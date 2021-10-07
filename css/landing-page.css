@@ -5,10 +5,9 @@
     padding: 0;
 }
 
-body {
+body{
     background-color: #304658;
 }
-
 
 nav{
     position: fixed;
@@ -41,27 +40,23 @@ img{
     width: 100px;
 }
 
-.nav-kiri{
-    display: inline-block;
-    margin-left: 20px;
-}
-
 .nav-kanan{
-    display: inline-block;
-    margin-right: 0;
-    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    width: 20%
 }
 
-.nav-kanan a{
-    padding: 14px 16px;
-    text-decoration: none;
-    color: #333;
-    float: right;    
+.nav-kiri{
+    display: flex;
+    width: 80%;
 }
 
-.nav-kiri a:hover{
-    background-color: #E2F3F4;
-    color: #333;
+.nav-link-masuk{
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    width: calc(100% - 700px);
 }
 
 .content-1{
@@ -93,16 +88,17 @@ img{
 .content-2{
     background-color: #E2F3F4;
     margin-top: 50px;
-    margin-bottom: 200px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 30px;
+    padding: 10px;
     width: 95%;
     border-radius: 30px;
     color: #333;
 }
 
 .content-2 p{
-    padding: 30px 30px;
+    padding: 30px 30px 30px 10px;
 }
 
 .benefit-content{
@@ -125,4 +121,176 @@ img{
     border-radius: 100%;
     margin-left: 30px;
     margin-bottom: 0;
+}
+
+
+.nav-logo{
+    height: 42px;
+    margin-right: 27px;
+    transform: translateY(7px);
+    width: auto;
+}
+
+.main-nav{
+    list-style: none;
+}
+
+.main-nav-second{
+    display: none;
+}
+
+.nav-kanan-second{
+    align-items: center;
+    display: none;
+    width: 20%
+}
+
+
+.container-mui{
+    max-width: 1441px;
+    margin: 0px auto;
+}
+
+.nav-container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+}
+
+.nav-masuk a{
+    background-color: #E2F3F4;
+    font-size: 15px;
+    display: block;
+    margin-top: 0px;
+    width: 100px;
+    color: #333;
+    padding: 10px 10px;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    box-shadow: 0px 1px 3px rgb(0 0 0 / 20%), 0px 2px 1px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%) !important;
+}
+
+/*--- Hamburger Menu ---*/
+.menu-toggle{
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.menu-toggle input{
+    position: absolute;
+    width: 40px;
+    height: 30px;
+    left: -6px;
+    top: -3px;
+    opacity: 0.0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.menu-toggle span{
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: #E2F3F4;
+    border-radius: 5px;
+}
+
+/*--- Hamburger Menu Animasi ---*/
+.menu-toggle span:nth-child(2){
+    transform-origin: 0 0;
+}
+
+.menu-toggle span:nth-child(4){
+    transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2){
+    transform: rotate(45deg) translate(1px, -1px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(4){
+    transform: rotate(-45deg) translate(-1px,2px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(3){
+    transform: scale(0);
+}
+
+
+/*--- Responsif ---*/
+
+@media screen and (max-width:908px){
+    .main-nav,.nav-kanan{
+        display: none;
+    }
+
+    .menu-toggle{
+        display: flex;
+    }
+
+    img{
+        width: 80px;
+    }
+
+   
+    section .main-nav-second{
+        display: flex;
+        background-color: #304658;
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        flex-direction: column;
+        align-items: left;
+        box-shadow: 0px 1px 3px rgb(0 0 0 / 20%), 0px 2px 1px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%) !important;
+        transform: translateX(100%);
+        transition: all 1s;
+    }
+
+    .slide{
+        transform: translateX(0);
+        display: flex;
+        background-color: #304658;
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        flex-direction: column;
+        align-items: left;
+        transition: all 1s;
+        box-shadow: 0px 1px 3px rgb(0 0 0 / 20%), 0px 2px 1px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%) !important;
+        
+    }
+}
+
+/* flexbox content 2 */
+.flex-container{
+    display: flex;      
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.flex-item{
+    padding: 10px;
+    flex: 15%;
+    border: 1px solid #333;
+}
+
+/*flexbox responsif*/
+@media (max-width: 800px) {
+    .flex-item{
+      flex: 100%;
+    }
+
+    .content-2{
+        width: 80%;
+    }
 }

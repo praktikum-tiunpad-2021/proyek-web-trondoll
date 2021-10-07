@@ -8,38 +8,41 @@
     <title>Home</title>
 </head>
 <body>
-    <!--<header>
-        <nav class="nav-bar">
-            <div>
-                <a href="#">
-                    <img src="../images/logo.png" class="logo" alt="logo perusahaan">
-                </a>
-            </div>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#keuangan">Keuangan</a></li>
-                <li><a href="#investasi">Investasi</a></li>
-                <li><a href="#">Tentang Kami</a></li>
-            </ul>
-        </nav>
-    </header>
-    -->
     <nav style="box-shadow: red">
-        <div class="nav-kiri">
-            <li>
-                <ul><a href="">Beranda</a></ul>
-                <ul><a href="">Keuangan</a></ul>
-                <ul><a href="">Investasi</a></ul>
-                <ul><a href="">Tentang Kami</a></ul>
-            </li>
+        <div class="container-mui nav-container">
+            <div class="nav-kiri">
+                <img src="D:\1.kuliah\3.semester3\Pemweb\Praktikum\Project Pemweb\proyek-web-trondoll-1\images\logo.png" alt="" class="nav-log">
+                
+                <div class="main-nav">
+                    <div style="display: inline-block; padding: 25px 40px 19px;"><a href="" style="display: inline-block; font-size: 15px; letter-spacing: 0.14px; width: auto; text-decoration: none; color: #fff;">Beranda</a></div>
+                    <div style="display: inline-block; padding: 25px 40px 19px;"><a href="" style="display: inline-block; font-size: 15px; letter-spacing: 0.14px; width: auto; text-decoration: none; color: #fff;">Keuangan</a></div>
+                    <div style="display: inline-block; padding: 25px 40px 19px;"><a href="" style="display: inline-block; font-size: 15px; letter-spacing: 0.14px; width: auto; text-decoration: none; color: #fff;">Investasi</a></div>
+                    <div style="display: inline-block; padding: 25px 40px 19px;"><a href="" style="display: inline-block; font-size: 15px; letter-spacing: 0.14px; width: auto; text-decoration: none; color: #fff;">Tentang Kami</a></div>
+                </div>
+                
+                <div class="main-nav-second">
+                    <div style="display: inline-block; padding: 60px 40px 10px;"><a href="login.html" value="Masuk" style="display: inline-block; font-size: 15px; letter-spacing: 0.14px; width: auto; text-decoration: none; color: #fff;">Masuk</a></div>
+                    <div style="display: inline-block; padding: 25px 40px 10px;"><a href="" style="display: inline-block; font-size: 15px; letter-spacing: 0.14px; width: auto; text-decoration: none; color: #fff;">Beranda</a></div>
+                    <div style="display: inline-block; padding: 25px 40px 10px;"><a href="" style="display: inline-block; font-size: 15px; letter-spacing: 0.14px; width: auto; text-decoration: none; color: #fff;">Keuangan</a></div>
+                    <div style="display: inline-block; padding: 25px 40px 10px;"><a href="" style="display: inline-block; font-size: 15px; letter-spacing: 0.14px; width: auto; text-decoration: none; color: #fff;">Investasi</a></div>
+                    <div style="display: inline-block; padding: 25px 40px 10px;"><a href="" style="display: inline-block; font-size: 15px; letter-spacing: 0.14px; width: auto; text-decoration: none; color: #fff;">Tentang Kami</a></div>
+                </div>
+            </div>
+            <div class="nav-kanan">
+                <div class="nav-masuk">
+                    <a href="login.html" value="Masuk"><p style="text-align: center; justify-content: center; text-decoration: none;">Masuk</p></a>
+                </div>
+            </div>
+
+            <div class="menu-toggle">
+                <input type="checkbox"/>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-        <!--<div class="nav-kanan">
-            <li>
-                <ul><a href="">Masuk</a></ul>
-            </li>
-        </div>
-        -->
     </nav>
+    
     <div class="content-1">
         <p>Amankan <br>
             masa depan Keuangan <br>
@@ -53,38 +56,37 @@
             <input type="submit" value="Selengkapnya">
         </div>
     </div>
+    
     <div class="content-2">
         <p style="font-size: 25px; padding-left: 60px;">Keuntungan Belajar dengan KambeFinance</p>
-        <div class="benefit-content">
-            <div class="benefit">
-                <div style="width: fit-content; text-align: center; justify-content: center;">
-                    <div class="circle"></div>
-                    <p style="display: inline-block; padding: 0 0;">Keuntungan 1</p>
-                </div>
+        <div class="flex-container">
+            <div class="flex-item">
+                <p style="display: inline-block; padding: 0 0;">Keuntungan 1</p>
                 <p style="text-align: justify; padding-top: 20px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum officia nam nisi pariatur dolore temporibus, vel rem beatae sapiente laboriosam asperiores quibusdam velit debitis repudiandae placeat? Quas laboriosam illum sed.</p>
             </div>
-            <div class="benefit">
-                <div style="width: fit-content">
-                    <div class="circle"></div>
-                    <p style="width: fit-content; display: inline-block; padding: 0 0;">Keuntungan 2</p>
-                </div>
+            <div class="flex-item">
+                <p style="width: fit-content; display: inline-block; padding: 0 0;">Keuntungan 2</p>
                 <p style="text-align: justify; padding-top: 20px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum officia nam nisi pariatur dolore temporibus, vel rem beatae sapiente laboriosam asperiores quibusdam velit debitis repudiandae placeat? Quas laboriosam illum sed.</p>
             </div>
-            <div class="benefit">
-                <div style="width: fit-content">
-                    <div class="circle"></div>
-                    <p style="width: fit-content; display: inline-block; padding: 0 0;">Keuntungan 3</p>
-                </div>
+            <div class="flex-item">
+                <p style="width: fit-content; display: inline-block; padding: 0 0;">Keuntungan 3</p>
                 <p style="text-align: justify; padding-top: 20px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum officia nam nisi pariatur dolore temporibus, vel rem beatae sapiente laboriosam asperiores quibusdam velit debitis repudiandae placeat? Quas laboriosam illum sed.</p>
             </div>
-            <div class="benefit" style="margin-right: 0;">
-                <div style="width: fit-content">
-                    <div class="circle"></div>
-                    <p style="width: fit-content; display: inline-block; padding: 0 0;">Keuntungan 4</p>
-                </div>
+            <div class="flex-item">
+                <p style="width: fit-content; display: inline-block; padding: 0 0;">Keuntungan 4</p>
                 <p style="text-align: justify; padding-top: 20px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum officia nam nisi pariatur dolore temporibus, vel rem beatae sapiente laboriosam asperiores quibusdam velit debitis repudiandae placeat? Quas laboriosam illum sed.</p>
             </div>
         </div>
-    </div>
+    </div> 
+
+
+    <script lang="javascript" type="text/javascript">
+        const menuToggle = document.querySelector('.menu-toggle input');
+        const section = document.querySelector('.main-nav-second');
+        
+        menuToggle.addEventListener('click', function(){
+            section.classList.toggle('slide');
+        });
+    </script>
 </body>
 </html>
