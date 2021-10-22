@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="D:\1.kuliah\3.semester3\Pemweb\Praktikum\Project Pemweb\proyek-web-trondoll-1\css\landing-page.css">
+    <link rel="stylesheet" href="landing-page.css">
     <title>Home</title>
 </head>
 <body>
-    <nav style="box-shadow: red">
+    <nav class="nav">
         <div class="container-mui nav-container">
             <div class="nav-kiri">
-                <img src="D:\1.kuliah\3.semester3\Pemweb\Praktikum\Project Pemweb\proyek-web-trondoll-1\images\logo.png" alt="" class="nav-log">
+                <img src="logo.png" alt="" class="nav-log">
                 
                 <div class="main-nav">
                     <div style="display: inline-block; padding: 25px 40px 19px;"><a href="" style="display: inline-block; font-size: 15px; letter-spacing: 0.14px; width: auto; text-decoration: none; color: #fff;">Beranda</a></div>
@@ -48,7 +48,7 @@
             masa depan Keuangan <br>
             keluarga Anda.
         </p>
-        <p style="margin-top: 10px; font-size: 20px; font-style:;">
+        <p style="margin-top: 10px; font-size: 20px;">
             Belajar Investasi dan Keuangan Pribadi paling mudah untuk anak muda.
         </p>
 
@@ -86,6 +86,16 @@
         
         menuToggle.addEventListener('click', function(){
             section.classList.toggle('slide');
+        });
+    </script>
+    <script>
+        window.addEventListener('scroll',(e)=>{
+            const nav = document.querySelector('.nav');
+            if(window.pageYOffset>0){
+            nav.classList.add("add-shadow");
+            }else{
+            nav.classList.remove("add-shadow");
+            }
         });
     </script>
 </body>
