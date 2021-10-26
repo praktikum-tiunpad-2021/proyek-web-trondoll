@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+--primary-color: #5098A8;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 10px;
+    border-radius: 8px;
+    margin-top: 20px;
+    color: #333333;
+}
+
+.tabel-tiga tr {background-color: #E2F3F4;}
+
+table td {
+    color: #333333;
+    padding: 10px;
+}
+
+.tabel-tiga tr:first-child {
+    border-bottom: 3px solid #5098A8;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    background-color: #304658;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.width-50 {
+    width: 50%;
+}
+
+.ml-auto {
+    margin-left: auto;
+}
+
+.text-center {
+    text-align: center;
+    color: #FFFFFF;
+}
+
+/* Progressbar */
+.progressbar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    counter-reset: step;
+    margin: 32px 0 64px;
+}
+
+.progressbar::before,
+.progress {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 4px;
+    width: 100%;
+    background-color: #dcdcdc;
+    z-index: -1;
+}
+
+.progress {
+    background-color: var(--primary-color);
+    width: 0%;
+    transition: 0.3s;
+}
+
+.progress-step {
+    width: 40px;
+    height: 40px;
+    background-color: #dcdcdc;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-step::before {
+    counter-increment: step;
+    content: counter(step);
+}
+
+.progress-step::after {
+    content: attr(data-title);
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    font-size: 14px;
+    color: #666;
+}
+
+.progress-step-active {
+    background-color: var(--primary-color);
+    color: #FFFFFF;
+}
+
+/* Form */
+.form {
+    width: 60%;
+    margin: 0 auto; 
+    padding: 24px;
+}
+
+.form-step {
+    display: none;
+    transform-origin: top;
+    animation: animate 0.5s;
+}
+
+.form-step-active {
+    display: block;
+}
+
+select, input[type=date] {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    background-color: #5098A8;
+}
+
+select option {
+    background: rgba(0, 0, 0, 0.3);
+    color: #FFFFFF;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+    font-size: 16px;
+}
+
+.tabel-jam {
+    margin-bottom: 20px;
+}
+
+.tabel-jam td {
+    color: #FFFFFF;
+    padding: 20px;
+}
+
+.tabel-jam tr {
+    border-bottom: 3px solid #5098A8;
+}
+
+input[type=text], input[type=tel], input[type=email], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+
+@keyframes animate {
+    from {
+        transform: scale(1, 0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1, 1);
+        opacity: 1;
+    }
+}
+
+/* Button */
+.btns-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.btn {
+    padding: 12px;
+    display: block;
+    text-decoration: none;
+    background-color: var(--primary-color);
+    color: #f3f3f3;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    box-shadow: 0 0 0 2px #fff, 0 0 0 3px var(--primary-color);
+}
