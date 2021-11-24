@@ -25,8 +25,7 @@ class Validation
         FormatRules::class,
         FileRules::class,
         CreditCardRules::class,
-        UserRules::class
-
+        UserRules::class,
     ];
 
     /**

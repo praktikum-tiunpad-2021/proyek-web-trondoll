@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #304658;
+}
+
+.card {
+  border-radius: 30px;
+  margin: 110px auto;
+  width: 50%;
+  padding: 30px;
+  background-color: #e2f3f4;
+}
+
+.card h2 {
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="tel"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  box-sizing: border-box;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  margin-top: 10px;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: #5098a8;
+  color: #f3f3f3;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  box-shadow: 0 0 0 2px #ffffff;
+  color: #304658;
+}

@@ -6,16 +6,16 @@ use CodeIgniter\Model;
 
 class UserModel extends Model
 {
-    protected $table = 'user';
-    protected $primaryKey = 'email_user'; // Primary Key
-    protected $allowedFields = ['email_user', 'password_user']; // ??
-    protected $beforeInsert = ['hasPassword']; // ??
-    protected $beforeUpdate = ['hasPassword']; // ??
+    protected $table = 'users';
+    protected $primaryKey = 'email';
+    protected $allowedFields = ['email', 'password', 'no_telp', 'nama', 'pekerjaan', 'tanggal_lahir'];
+    protected $beforeInsert = ['hashPassword'];
+    protected $beforeUpdate = ['hashPassword'];
 
     protected function hashPassword(array $data)
     {
-        if (isset($data['data']['password_user']))
-            $data['data']['password_user'] = password_hash($data['data']['password_user'], PASSWORD_DEFAULT);
+        if (isset($data['data']['password']))
+            $data['data']['password'] = password_hash($data['data']['password'], PASSWORD_DEFAULT);
 
         return $data;
     }

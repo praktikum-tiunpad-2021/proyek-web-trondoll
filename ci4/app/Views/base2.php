@@ -9,9 +9,13 @@
 </head>
 
 <body>
+    <?= $this->include('/nav2'); ?>
+
     <div>
         <?= $this->renderSection('content'); ?>
     </div>
+
+    <?= $this->include('/footer'); ?>
 </body>
 
 </html>

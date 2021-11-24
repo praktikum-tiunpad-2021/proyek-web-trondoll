@@ -149,7 +149,7 @@ button {
   padding-bottom: 20px;
 }
 
-.detail-class input {
+.detail-class a {
   padding-top: 7px;
   padding-bottom: 7px;
   padding-left: 20px;
@@ -159,6 +159,7 @@ button {
   background-color: #597993;
   border-radius: 5px;
   border: none;
+  text-decoration: none;
 }
 
 .box-meet input {

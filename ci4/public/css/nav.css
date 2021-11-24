@@ -109,6 +109,29 @@ img {
     0px 1px 1px rgb(0 0 0 / 14%) !important;
 }
 
+.nav-profil {
+  position: relative;
+  width: 770px;
+  margin: auto;
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  text-decoration: none;
+}
+
+.nav-profil a {
+  font-size: 15px;
+  display: block;
+  margin-top: 0px;
+  width: 100px;
+  color: #fff;
+  padding: 10px 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+}
+
 /*--- Hamburger Menu ---*/
 .menu-toggle {
   display: none;
@@ -227,4 +250,51 @@ img {
   .content-2 {
     width: 80%;
   }
+}
+
+/* DropDown */
+.nav-profil ul {
+  list-style: none;
+}
+
+.nav-profil ul li a {
+  float: left;
+  width: 150px;
+  display: block;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-profil ul li a:hover {
+  display: block;
+  text-decoration: none;
+}
+
+.nav-profil ul li:hover ul {
+  display: block;
+}
+
+.nav-profil ul li:hover ul {
+  display: block;
+}
+
+.nav-profil ul ul {
+  display: none;
+  list-style: none;
+  position: absolute;
+  background-color: #2c4153;
+  top: 40px;
+  width: 150px;
+}
+
+.nav-profil ul ul li a {
+  float: none;
+  display: block;
+  text-align: left;
+  width: 160px;
+}
+
+.nav-profil ul ul li a:hover {
+  color: #fff;
 }

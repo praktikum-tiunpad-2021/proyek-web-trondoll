@@ -9,9 +9,12 @@ class UserRules
     public function validateUser(string $str, string $fields, array $data)
     {
         $model = new UserModel();
-        $user = $model->where('email_user', $data['email_user'])->first();
+        $user = $model->where('email', $data['email'])
+            ->first();
+
         if (!$user)
             return false;
-        return password_verify($data['password_user'], $user['password_user']);
+
+        return password_verify($data['password'], $user['password']);
     }
 }

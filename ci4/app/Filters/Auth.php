@@ -14,7 +14,6 @@ class Auth implements FilterInterface
             return redirect()->to('/');
         }
     }
-
     public function after(RequestInterface $request, ResponseInterface $response, $arguments = null)
     {
         // something

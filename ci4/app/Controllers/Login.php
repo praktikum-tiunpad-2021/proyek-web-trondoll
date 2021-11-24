@@ -10,42 +10,39 @@ class Login extends BaseController
     {
         $data = [];
         helper(['form']);
-        if ($this->request->getMethod()  == 'post') {
-            // Lets do the validation here
+        if ($this->request->getMethod() == 'post') {
+            // validation
             $rules = [
-                'email_user' => 'required|min_length[6]|max_length[50]|valid_email',
-                'password_user' => 'required|min_length[8]|max_length[255]|validateUser[email_user,password_user]',
-
+                'email' => 'required|min_length[6]|max_length[50]|valid_email',
+                'password' => 'required|min_length[8]|max_length[255]|validateUser[email,password]',
             ];
-
             $errors = [
-                'password_user' => [
+                'password' => [
                     'validateUser' => 'Email or Password don\'t match'
                 ]
             ];
-
             if (!$this->validate($rules, $errors)) {
                 $data['validation'] = $this->validator;
             } else {
                 $model = new UserModel();
 
-                $user = $model->where('email_user', $this->request->getVar('email_user'))
+                $user = $model->where('email', $this->request->getVar('email'))
                     ->first();
 
                 $this->setUserSession($user);
-                return redirect()->to('/');
+                return redirect()->to('landingpage2');
             }
         }
         return view('login', $data);
     }
 
-    public function setUserSession($user)
+    private function setUserSession($user)
     {
         $data = [
-            'email_user' => $user['email_user'],
+            'email' => $user['email'],
+            'nama' => $user['nama'], //
             'isLoggedIn' => true,
         ];
-
         session()->set($data);
         return true;
     }
@@ -57,31 +54,32 @@ class Login extends BaseController
         if ($this->request->getMethod() == 'post') {
             // validation
             $rules = [
-                'email_user' => 'required|min_length[6]|max_length[50]|valid_email|is_unique[users.email]',
-                // 'password_user' => 'required|min_length[8]|max_length[100]',
-                // 'password_confirm' => 'matches[password_user] ',
+                'email' => 'required|min_length[6]|max_length[50]|valid_email|is_unique[users.email]',
+                'password' => 'required|min_length[8]|max_length[255]',
+                'password_confirm' => 'matches[password]',
             ];
-
             if (!$this->validate($rules)) {
                 $data['validation'] = $this->validator;
             } else {
                 $model = new UserModel();
 
                 $newData = [
-                    // Data yang akan diinput
-                    'email_user' => $this->request->getVar('email_user'),
-                    'password_user' => $this->request->getVar('password_user'),
+                    'email' => $this->request->getVar('email'),
+                    'password' => $this->request->getVar('password'),
+                    'no_telp' => $this->request->getVar('no_telp'),
+                    'nama' => $this->request->getVar('nama'),
+                    'pekerjaan' => $this->request->getVar('pekerjaan'),
+                    'tanggal_lahir' => $this->request->getVar('tanggal_lahir'),
                 ];
-
                 $model->ignore(true)->insert($newData);
                 $session = session();
-                $session->setFLashdata('success', 'Successful Registration');
-
+                $session->setFlashdata('success', 'Successful Registration');
                 return redirect()->to('/');
             }
         }
-        return view('regis', $data);
+        return view('register', $data);
     }
+
 
     public function logout()
     {
