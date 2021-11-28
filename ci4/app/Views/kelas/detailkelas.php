@@ -27,7 +27,7 @@
 
     <div class="content">
         <p class="detail" style="font-size: 30px;">Tentang Mentor</p>
-        <img src="\img\user.png" style="padding-top: 30px;">
+        <img src="\img\user.png" style="padding-top: 30px; width: 160px">
         <p style="padding-top: 45px;">Rangga Putra</p>
         <p class="detail" style="padding-top: 30px; padding-bottom: 80px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem odit accusantium magnam in nisi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem odit accusantium magnam in nisi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem odit accusantium magnam in nisi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem odit accusantium magnam in nisi.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem odit accusantium magnam in nisi</p>
     </div>

@@ -20,7 +20,7 @@
                     <div style="display: inline-block; padding: 25px 40px 19px;"><a <?= $isActivePage('/'); ?> href="/" style="display: inline-block; font-size: 15px; letter-spacing: 0.14px; width: auto; text-decoration: none; color: #fff;">Beranda</a></div>
                     <div style="display: inline-block; padding: 25px 40px 19px;"><a <?= $isActivePage('/'); ?> href="/login" style="display: inline-block; font-size: 15px; letter-spacing: 0.14px; width: auto; text-decoration: none; color: #fff;">Konsultasi</a></div>
                     <div style="display: inline-block; padding: 25px 40px 19px;"><a <?= $isActivePage('/'); ?> href="/login" style="display: inline-block; font-size: 15px; letter-spacing: 0.14px; width: auto; text-decoration: none; color: #fff;">Kelas</a></div>
-                    <div style="display: inline-block; padding: 25px 40px 19px;"><a href="" style="display: inline-block; font-size: 15px; letter-spacing: 0.14px; width: auto; text-decoration: none; color: #fff;">Tentang Kami</a></div>
+                    <div style="display: inline-block; padding: 25px 40px 19px;"><a href="/aboutus" style="display: inline-block; font-size: 15px; letter-spacing: 0.14px; width: auto; text-decoration: none; color: #fff;">Tentang Kami</a></div>
                 </div>
 
                 <div class="main-nav-second">
@@ -30,7 +30,7 @@
                     <!-- <div style="display: inline-block; padding: 25px 40px 10px;"><a <?= $isActivePage('/'); ?>href="/login" style="display: inline-block; font-size: 15px; letter-spacing: 0.14px; width: auto; text-decoration: none; color: #fff;">Kelas</a></div> -->
                     <!-- <div style="display: inline-block; padding: 25px 40px 10px;"><a href="" style="display: inline-block; font-size: 15px; letter-spacing: 0.14px; width: auto; text-decoration: none; color: #fff;">Tentang Kami</a></div> -->
                     <div style="display: inline-block; padding: 25px 40px 10px;"><a <?= $isActivePage('/'); ?> href="/login" style="display: inline-block; font-size: 15px; letter-spacing: 0.14px; width: auto; text-decoration: none; color: #fff;">Kelas</a></div>
-                    <div style="display: inline-block; padding: 25px 40px 10px;"><a href="" style="display: inline-block; font-size: 15px; letter-spacing: 0.14px; width: auto; text-decoration: none; color: #fff;">Tentang Kami</a></div>
+                    <div style="display: inline-block; padding: 25px 40px 10px;"><a href="/aboutus" style="display: inline-block; font-size: 15px; letter-spacing: 0.14px; width: auto; text-decoration: none; color: #fff;">Tentang Kami</a></div>
 
 
 

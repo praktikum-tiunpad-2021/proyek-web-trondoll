@@ -43,23 +43,20 @@
                         <div class="asset-img"></div>
                         <div class="ket">
                             <p style="text-align: left;"><?= $row['nama']; ?></p>
-                            <p style="text-align: justify; padding-top: 10px; font-size: 15px;">Lorem ipsum iqno iwai</p>
+                            <p style="text-align: justify; padding-top: 10px; font-size: 13px;">Lorem ipsum iqno iwai</p>
                         </div>
                         <div class="box-meet">
-                            <input type="submit" value="<?= $row['jumlah_materi']; ?> Materi">
+                            <input type="submit" style="color: white;" value="<?= $row['jumlah_materi']; ?> Materi">
                         </div>
                         <div class="line-break">
                             <hr>
-                        </div>
-                        <div class="box-disc">
-                            <p>50%</p>
                         </div>
                         <div class="harga">
                             <p><?= $row['harga']; ?></p>
                         </div>
                         <br>
                         <div class="detail-class">
-                            <a href="\kelas\detailkelas">Selengkapnya</a>
+                            <a href="\kelas\detailkelas" style="color: white; font-size: 13px;">Selengkapnya</a>
                         </div>
                     </div>
                 </div>
