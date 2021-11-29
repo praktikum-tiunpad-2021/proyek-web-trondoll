@@ -102,36 +102,47 @@
                 <input type="date" name="date" id="date-input">
             </div>
 
-            <button class="btn btn-next width-25 ml-auto">Next</button>
+            <a class="btn btn-next width-25 ml-auto">Next</a>
 
         </div>
         <div class="form-step">
             <div class="tabel-jam">
                 <table>
+                    <input type="hidden" name="jam">
                     <tr>
                         <td>08.00-09.00</td>
-                        <td><button name="waktu" value="08.00-09.00" id="waktu1" class="btn-book btn-next" onclick="booking()">Booking</button></td>
+                        <td><button id="waktu1" class="btn-book btn-next" onclick="booking('08.00-09.00')">Booking</button>
+                    
+                        </td>
                     </tr>
                     <tr>
                         <td>09.00-10.00</td>
-                        <td><button id="waktu2" class="btn-book btn-next" onclick="booking()">Booking</button></td>
+                        <td><button id="waktu2" class="btn-book btn-next" onclick="booking('09.00-10.00')">Booking </button>
+                           
+                        </td>
                     </tr>
                     <tr>
                         <td>13.00-14.00</td>
-                        <td><button id="waktu3" class="btn-book btn-next" onclick="booking()">Booking</button></td>
+                        <td><button id="waktu3" class="btn-book btn-next" onclick="booking('13.00-14.00')">Booking</button>
+                            
+                        </td>
                     </tr>
                     <tr>
                         <td>15.00-16.00</td>
-                        <td><button id="waktu4" class="btn-book btn-next" onclick="booking()">Booking</button></td>
+                        <td><button id="waktu4" class="btn-book btn-next" onclick="booking('15.00-16.00')">Booking</button>
+                            
+                        </td>
                     </tr>
                     <tr>
                         <td>20.00-21.00</td>
-                        <td><button id="waktu5" class="btn-book btn-next" onclick="booking()">Booking</button></td>
+                        <td><button id="waktu5" class="btn-book btn-next" onclick="booking('20.00-21.00')">Booking</button>
+                            
+                        </td>
                     </tr>
                 </table>
             </div>
             <div class="btns-group">
-                <button class="btn btn-prev">Back</button>
+                <a class="btn btn-prev">Back</a>
             </div>
         </div>
         <div class="form-step">
@@ -154,7 +165,7 @@
                         <table>
                             <tr>
                                 <td>Waktu</td>
-                                <td><span id="consult-date"></span><span id="consult-time"></span></td>
+                                <td><span id="consult-date"></span><br><span id="consult-time"></span></td>
                             </tr>
                             <tr>
                                 <td><b><span id="nama-layanan"></b></span></td>
@@ -169,7 +180,7 @@
                 </div>
             </div>
             <div class="btns-group">
-                <button class="btn btn-prev">Back</button>
+                <a class="btn btn-prev">Back</a>
                 <input type="submit" value="Submit" class="btn btn-next" />
             </div>
         </div>
@@ -178,7 +189,7 @@
         <div class="info">
             <p>Thank you! Your booking is successfully booked.</p>
         </div>
-        <a href="" class="btn width-25" onclick="reload()" style="margin: 0 auto;">Make New Registration</a>
+        <a href="" class="btn width-25" onclick="reload()" style="margin: 0 auto; margin-bottom: 20px;">Make New Registration</a>
     </div>
 
     <script>
@@ -242,7 +253,7 @@
             }
         }, false);
 
-        function booking() {
+        function booking(jamKonsul) {
             const service = document.getElementById("input-layanan").value;
             document.getElementById("nama-layanan").innerHTML = service;
 
@@ -252,14 +263,9 @@
             const datePick = document.getElementById("date-input").value;
             document.getElementById("consult-date").innerHTML = datePick;
 
-            let consultTime;
-            if (document.getElementById("waktu1").clicked == true) {
-                consultTime = "08.00 AM";
-                document.getElementById("consult-time").innerHTML = consultTime;
-            } else if (document.getElementById("waktu2").clicked == true) {
-                consultTime = "09.00 AM";
-                document.getElementById("consult-time").innerHTML = consultTime;
-            }
+            document.getElementById("consult-time").innerHTML = jamKonsul;
+
+            document.getElementsByName("jam")[0].value = jamKonsul;
         }
 
         nextBtns.forEach((btn) => {
