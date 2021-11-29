@@ -16,7 +16,7 @@
         <div class="border">
             <form action="/register" method="post">
                 <div class="logo">
-                    <img src="\img\KambeFinance.PNG" alt="">
+                    <a href="/"><img src="\img\KambeFinance.PNG" alt=""></a>
                 </div>
                 <div>
                     <p>Nama</p>

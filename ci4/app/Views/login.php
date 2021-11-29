@@ -21,7 +21,7 @@
         <?php endif; ?>
         <form action="/login" method="post">
             <div class="sign-in">
-                <img src="img/KambeFinance.PNG" alt="">
+                <a href="/"><img src="img/KambeFinance.PNG" alt="" href> </a>
                 <label for="email">Email</label>
                 <input type="email" name="email" id="email" required value="<?= set_value('email') ?>">
 

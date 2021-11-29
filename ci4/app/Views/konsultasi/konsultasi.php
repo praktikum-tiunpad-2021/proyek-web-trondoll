@@ -23,18 +23,18 @@
         <div class="content-title">
             <h3>Solusi Perencanaan Keuangan untuk Anda dan Keluarga</h3>
         </div>
-        <div class="container">
+        <div class="container-k">
             <div class="box first">
                 <div class="card">
                     <table>
                         <td>Perencanaan Keuangan</td>
-                        <td><img src="\img\money-bag.png" alt="icon money bag" style="width: 30px;"></td>
+                        <td><img src="\img\money-bag.png" alt="icon money bag" style="width: 30px; float: right;"></td>
                     </table>
                 </div>
                 <div class="card">
                     <table>
                         <td>Perencanaan Dana Hari Tua</td>
-                        <td><img src="\img\handshake.png" alt="handshake" style="width: 30px;"></td>
+                        <td><img src="\img\handshake.png" alt="handshake" style="width: 30px; float: right;"></td>
                     </table>
                 </div>
             </div>
@@ -42,13 +42,13 @@
                 <div class="card">
                     <table>
                         <td>Perencanaan Asuransi</td>
-                        <td><img src="\img\umbrella.png" alt="umbrella" style="width: 30px;"></td>
+                        <td><img src="\img\umbrella.png" alt="umbrella" style="width: 30px; float: right;"></td>
                     </table>
                 </div>
                 <div class="card">
                     <table>
                         <td>Perencanaan Dana Pendidikan</td>
-                        <td><img src="\img\student-center.png" alt="Study" style="width: 30px;"></td>
+                        <td><img src="\img\student-center.png" alt="Study" style="width: 30px; float: right;"></td>
                     </table>
                 </div>
             </div>
@@ -146,7 +146,7 @@
             </div>
         </div>
         <div class="form-step">
-            <div class="container">
+            <div class="container-k">
                 <div class="box first">
                     <label style="color: #FFFFFF;">Nama Lengkap</label>
                     <input type="text" id="input-nama" autocomplete="off" value="<?= $users['nama']; ?>" disabled>
