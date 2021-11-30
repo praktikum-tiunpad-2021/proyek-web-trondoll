@@ -25,13 +25,12 @@
             <p><?= $pembayaran['nama_kelas']; ?> </p>
 
             <label>Harga Kelas</label>
-            <p></p>
+            <p><?= $kelas['harga']; ?> </p>
 
             <label>Jenis Pembayaran</label>
             <p><?= $pembayaran['jenis_pembayaran']; ?></p>
 
-            <!-- <button class="btn" type="submit">Check Out</button> -->
-        </form>
+            <a href="/pembayaran/delete/<?= $pembayaran['email']; ?>" class="btn">Cancel</a>        </form>
     </div>
 
 </body>

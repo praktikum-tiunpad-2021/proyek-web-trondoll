@@ -27,8 +27,10 @@ class Kelas extends Controller
 
     public function pembayaran()
     {
+        $model1 = new KelasModel();
         $model2 = new UserProfilModel();
         $data['users'] = $model2->getUsers(session()->get('email'));
+        $data['kelas'] = $model1->getKelas();
         echo view('\kelas\pembayaran', $data);
     }
 

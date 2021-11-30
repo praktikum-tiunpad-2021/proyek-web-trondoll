@@ -20,18 +20,15 @@
 
             <label>Email</label>
             <input type="email" name="email" autocomplete="off" value="<?= $users['email']; ?>">
-
             <label>Kelas</label>
             <!-- <input type="text" name="nama_kelas" id="date-input" value=""> -->
-            <select name="nama_kelas" id="kelas" class='dependent-selects__parent' required onchange="tampilkanHarga()">
-                <option value="" disabled selected>- Pilih -</option>
-                <option value="Saham">Saham</option>
-                <option value="Technical Analysis">Technical Analysis</option>
-                <option value="Mengenal Laporan Keuangan" data-child-options="Jonathan Victor,Olivia,Ratu Maharani">Perencanaan Dana Pensiun</option>
+            <select name="nama_kelas" id="kelas"  required>
+            <?php foreach($kelas as $row):?>
+                <option value="<?php echo $row['nama']; ?>"><?php echo $row['nama'];?></option>
+            <?php endforeach;?>
             </select>
-
             <label>Harga Kelas</label>
-            <button class="h" id="harga" name="harga_kelas" value=""></button>
+            <button class="h" id="harga" name="harga_kelas" value=""  ></button>
             <label>Jenis Pembayaran</label>
             <select name="jenis_pembayaran" required>
                 <option value="" disabled selected>- Pilih -</option>
@@ -53,6 +50,16 @@
             document.getElementById("harga").innerHTML = "Rp.250.000,00";
         }
     }
+
+    let y = <?php echo json_encode($kelas, JSON_HEX_TAG) ?>;
+    document.getElementById("harga").innerHTML = y[0].harga;
+
+    document.getElementById("kelas").addEventListener("change", () => {
+        let x = (document.getElementById("kelas").value);
+        console.log(y.find(y=>y.nama == x).harga);
+        document.getElementById("harga").innerHTML = y.find(y=>y.nama == x).harga;
+    })
+    
 </script>
 
 </html>

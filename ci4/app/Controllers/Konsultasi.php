@@ -24,7 +24,7 @@ class Konsultasi extends Controller
         $model = new KonsultasiModel();
         $newData = array(
             'perencana_keuangan' => $this->request->getVar('perencana_keuangan'),
-            'email' => $this->request->getPost('email'),
+            'email_users' => $this->request->getPost('email_users'),
             'jenis' => $this->request->getPost('jenis'),
             'tanggal' => $this->request->getPost('date'), 
             'jam' => $this->request->getVar('jam'),

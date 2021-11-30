@@ -155,7 +155,7 @@
                     <input type="tel" id="no-telp" autocomplete="off" value="<?= $users['no_telp']; ?>" disabled>
 
                     <label style="color: #FFFFFF;">Email</label>
-                    <input type="email" name="email" autocomplete="off" value="<?= $users['email']; ?>">
+                    <input type="email" name="email_users" autocomplete="off" value="<?= $users['email']; ?>">
 
                     <label style="color: #FFFFFF;">Catatan</label>
                     <textarea name="catatan" id="input-catatan" cols="30" rows="5" required></textarea>

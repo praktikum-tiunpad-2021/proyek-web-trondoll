@@ -22,4 +22,10 @@ class PembayaranModel extends Model
             return $this->where('email', $email)->first();
         }
     }
+
+    public function deleteData($id)
+    {
+        $query = $this->db->table($this->table)->delete(array('email' => $id));
+        return $query;
+    }
 }
