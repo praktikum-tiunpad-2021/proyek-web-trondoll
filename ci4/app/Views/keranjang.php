@@ -14,35 +14,26 @@
 <body>
     <div class="card">
         <h2>Keranjang</h2>
-        <form action="" id="form" name="form" method="POST">
-            <label>Nama Lengkap</label>
-            <p><?= $users['nama']; ?></p>
-
-            <label>Email</label>
-            <p><?= $users['email']; ?></p>
-
-            <label>Kelas</label>
-            <p><?= $pembayaran['nama_kelas']; ?> </p>
-
-            <label>Harga Kelas</label>
-            <p><?= $kelas['harga']; ?> </p>
-
-            <label>Jenis Pembayaran</label>
-            <p><?= $pembayaran['jenis_pembayaran']; ?></p>
-
-            <a href="/pembayaran/delete/<?= $pembayaran['email']; ?>" class="btn">Cancel</a>        </form>
+        <table>
+            <tr>
+                <td>Nama</td>
+                <td><?= $users['nama']; ?></td>
+            </tr>
+            <tr>
+                <td>Kelas</td>
+                <td><?= $pembayaran['nama_kelas']; ?></td>
+            </tr>
+            <tr>
+                <td>Metode Pembayaran</td>
+                <td><?= $pembayaran['jenis_pembayaran']; ?></td>
+            </tr>
+        </table>
+            <a href="/pembayaran/delete/<?= $pembayaran['email']; ?>" class="btn">Cancel</a>        
     </div>
 
 </body>
 <script>
-    function tampilkanHarga() {
-        var nama_kelas = document.getElementById("form").kelas.value;
-        if (nama_kelas == "Saham") {
-            document.getElementById("harga").innerHTML = "Rp.300.000,00";
-        } else if (nama_kelas == "Technical Analysis") {
-            document.getElementById("harga").innerHTML = "Rp.250.000,00";
-        }
-    }
+    
 </script>
 
 </html>

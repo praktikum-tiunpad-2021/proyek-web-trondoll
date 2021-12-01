@@ -33,7 +33,7 @@
             <select name="jenis_pembayaran" required>
                 <option value="" disabled selected>- Pilih -</option>
                 <option value="DANA">DANA</option>
-                <option value="Go-Pay">Go-Pay</option>
+                <option value="Gopay">Gopay</option>
                 <option value="Shopee-Pay">Shopee-Pay</option>
             </select>
             <button class="btn" type="submit">Check Out</button>
@@ -42,15 +42,6 @@
 
 </body>
 <script>
-    function tampilkanHarga() {
-        var nama_kelas = document.getElementById("form").kelas.value;
-        if (nama_kelas == "Saham") {
-            document.getElementById("harga").innerHTML = "Rp.300.000,00";
-        } else if (nama_kelas == "Technical Analysis") {
-            document.getElementById("harga").innerHTML = "Rp.250.000,00";
-        }
-    }
-
     let y = <?php echo json_encode($kelas, JSON_HEX_TAG) ?>;
     document.getElementById("harga").innerHTML = y[0].harga;
 

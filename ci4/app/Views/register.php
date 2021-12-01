@@ -58,7 +58,7 @@
 
                 <!-- Validation -->
                 <?php if (isset($validation)) : ?>
-                    <div class="col-12">
+                    <div class="col-10">
                         <div class="alert alert-danger" role="alert">
                             <?= $validation->listErrors() ?>
                         </div>
@@ -134,13 +134,7 @@
                                     <input type="password" name="password_confirm" id="password_confirm" class="form-control" values="">
                                 </div>
                             </div>
-                            <?php if (isset($validation)) : ?>
-                                <div class="col-12">
-                                    <div class="alert alert-danger" role="alert">
-                                        <?= $validation->listErrors() ?>
-                                    </div>
-                                </div>
-                            <?php endif; ?>
+                      
                             <div class="col-12">
                                 <div class="form-group">
                                     <label for="no_telp">Nomer Telepon</label>

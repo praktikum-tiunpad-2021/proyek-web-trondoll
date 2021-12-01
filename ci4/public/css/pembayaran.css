@@ -10,6 +10,11 @@ body {
   background-color: #304658;
 }
 
+table {
+  margin:20px;
+  width: 70%;
+}
+
 .card {
   border-radius: 30px;
   margin: 110px auto;

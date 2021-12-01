@@ -27,10 +27,8 @@ class Pembayaran extends Controller
     {
         $model1 = new UserProfilModel();
         $model2 = new PembayaranModel();
-        $model3 = new KelasModel();
         $data['users'] = $model1->getUsers(session()->get('email'));
         $data['pembayaran'] = $model2->getData(session()->get('email'));
-        $data['kelas'] = $model3->getKelas();
         return view('keranjang', $data);
     }
 

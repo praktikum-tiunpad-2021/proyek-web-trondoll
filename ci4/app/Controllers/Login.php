@@ -73,7 +73,6 @@ class Login extends BaseController
                 ];
                 $model->ignore(true)->insert($newData);
                 $session = session();
-                $session->setFlashdata('success', 'Successful Registration');
                 return redirect()->to('/');
             }
         }
