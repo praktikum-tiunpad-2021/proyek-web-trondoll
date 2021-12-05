@@ -44,6 +44,8 @@ $routes->get('/konsultasi', 'Konsultasi::view');
 $routes->get('/profil', 'Home::profil');
 $routes->get('/keranjang', 'Pembayaran::view');
 $routes->get('/aboutus', 'AboutUs::aboutus');
+$routes->get('/aboutus2', 'AboutUs::aboutusNotLogin');
+
 
 
 /*

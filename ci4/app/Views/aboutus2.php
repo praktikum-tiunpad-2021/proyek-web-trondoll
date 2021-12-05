@@ -1,4 +1,4 @@
-<?= $this->extend('base2'); ?>
+<?= $this->extend('base1'); ?>
 
 <?= $this->section('content'); ?>
 <!DOCTYPE html>

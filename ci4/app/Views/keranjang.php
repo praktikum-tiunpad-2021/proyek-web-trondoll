@@ -27,6 +27,10 @@
                 <td>Metode Pembayaran</td>
                 <td><?= $pembayaran['jenis_pembayaran']; ?></td>
             </tr>
+            <tr>
+                <td>Keterangan</td>
+                <td><?= $pembayaran['keterangan']; ?></td>
+            </tr>
         </table>
             <a href="/pembayaran/delete/<?= $pembayaran['email']; ?>" class="btn">Cancel</a>        
     </div>

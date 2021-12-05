@@ -8,7 +8,7 @@ class AddTableUsers extends Migration
 {
     public function up()
     {
-        $this->forge->addField ([
+        $this->forge->addField ([ 
             'email'          => [
                 'type'           => 'varchar',
                 'constraint'     => 100,

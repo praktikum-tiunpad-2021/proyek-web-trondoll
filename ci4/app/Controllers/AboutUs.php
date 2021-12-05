@@ -9,6 +9,13 @@ class AboutUs extends BaseController
 {
     public function aboutus()
     {
-        return view('aboutus');
+        $model = new UserProfilModel();
+        $data['users'] = $model->getUsers(session()->get('email'));
+        return view('aboutus', $data);
+    }
+
+    public function aboutusNotLogin()
+    {
+        return view('aboutus2');
     }
 }

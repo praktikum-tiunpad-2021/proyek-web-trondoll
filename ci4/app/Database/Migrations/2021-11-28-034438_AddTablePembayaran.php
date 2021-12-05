@@ -20,6 +20,11 @@ class AddTablePembayaran extends Migration
             'jenis_pembayaran'         => [
                 'type'           => 'varchar',
                 'constraint'     => 100,
+            ],
+            'keterangan'         => [
+                'type'           => 'varchar',
+                'constraint'     => 100,
+                'default'        => 'Belum dibayar'
             ]
         ]);
         $this->forge->addKey('email', true);
