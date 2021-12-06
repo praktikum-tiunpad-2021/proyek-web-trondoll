@@ -40,7 +40,7 @@
             <?php foreach ($kelas as $row) : ?>
                 <div class="flex-item">
                     <div class="class">
-                        <div class="asset-img"></div>
+                        <div> <img src="<?= $row['gambar']; ?>" alt="" class="asset-img"></div>
                         <div class="ket">
                             <p style="text-align: left;"><?= $row['nama']; ?></p>
                             <p style="text-align: justify; padding-top: 10px; font-size: 13px;">Lorem ipsum iqno iwai</p>

@@ -15,13 +15,13 @@ class Kelas extends Controller
         $data['users'] = $model2->getUsers(session()->get('email'));
         $data['kelas'] = $model1->getKelas();
         echo view('\kelas\kelas1', $data);
-        // return view('\kelas\kelas1', $data);
     }
 
     public function detailKelas()
     {
-        $model2 = new UserProfilModel();
-        $data['users'] = $model2->getUsers(session()->get('email'));
+        $model1 = new UserProfilModel();
+        $model2 = new KelasModel();
+        $data['users'] = $model1->getUsers(session()->get('email'));
         echo view('\kelas\detailKelas', $data);
     }
 
@@ -33,13 +33,4 @@ class Kelas extends Controller
         $data['kelas'] = $model1->getKelas();
         echo view('\kelas\pembayaran', $data);
     }
-
-    // public function pembelianKelas()
-    // {
-    //     $model1 = new PembayaranModel();
-    //     $model2 = new UserProfilModel();
-    //     $data['users'] = $model2->getUsers(session()->get('email'));
-    //     $data['kelas'] = $model1->getkelas();
-    //     echo view('\kelas\pembayaran', $data);
-    // }
 }

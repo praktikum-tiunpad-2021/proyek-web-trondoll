@@ -28,4 +28,13 @@ class PembayaranModel extends Model
         $query = $this->db->table($this->table)->delete(array('email' => $id));
         return $query;
     }
+
+    public function getKeterangan($email, $id = true)
+    {
+        if ($id === false) {
+            return $this->findAll();
+        } else {
+            return $this->where('email', $email)->first();
+        }
+    }
 }

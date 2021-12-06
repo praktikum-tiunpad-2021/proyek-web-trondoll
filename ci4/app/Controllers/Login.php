@@ -69,7 +69,7 @@ class Login extends BaseController
                     'no_telp' => $this->request->getVar('no_telp'),
                     'nama' => $this->request->getVar('nama'),
                     'pekerjaan' => $this->request->getVar('pekerjaan'),
-                    'tanggal_lahir' => $this->request->getVar('tanggal_lahir'),
+                    'tanggal_lahir' => $this->request->getPost('tanggal_lahir'),
                 ];
                 $model->ignore(true)->insert($newData);
                 $session = session();

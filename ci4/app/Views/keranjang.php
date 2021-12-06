@@ -32,12 +32,13 @@
                 <td><?= $pembayaran['keterangan']; ?></td>
             </tr>
         </table>
-            <a href="/pembayaran/delete/<?= $pembayaran['email']; ?>" class="btn">Cancel</a>        
+        <a href="/pembayaran/delete/<?= $pembayaran['email']; ?>" class="btn">Cancel</a>
+        <a href="/pembayaran/getKeterangan" class="btn">Kelas</a>
     </div>
 
 </body>
 <script>
-    
+
 </script>
 
 </html>

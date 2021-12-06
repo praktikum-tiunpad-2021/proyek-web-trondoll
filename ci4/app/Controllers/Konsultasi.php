@@ -26,21 +26,13 @@ class Konsultasi extends Controller
             'perencana_keuangan' => $this->request->getVar('perencana_keuangan'),
             'email_users' => $this->request->getPost('email_users'),
             'jenis' => $this->request->getPost('jenis'),
-            'tanggal' => $this->request->getPost('date'), 
+            'tanggal' => $this->request->getPost('date'),
             'jam' => $this->request->getVar('jam'),
             'catatan' => $this->request->getPost('catatan'),
         );
 
-
-
-        // $model2 = new UserProfilModel();
-        // $data['users'] = $model2->getUsers(session()->get('nama'));
         $model->saveData($newData);
         return redirect()->to('/konsultasi');
-
-        // echo "<prev>";
-        // var_dump($this->request->getVar());
-        // echo "</prev>";
     }
 
     // public function readDataUser()

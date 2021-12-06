@@ -32,4 +32,10 @@ class Home extends BaseController
         $data['users'] = $model->getUsers(session()->get('email'));
         return view('profil.php', $data);
     }
+
+    public function getKeterangan()
+    {
+
+        return view('landingpage');
+    }
 }

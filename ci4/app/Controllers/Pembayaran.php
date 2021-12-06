@@ -36,6 +36,23 @@ class Pembayaran extends Controller
     {
         $model = new PembayaranModel();
         $model->deleteData($id);
-        return redirect()->to('/kelas');   
+        return redirect()->to('/kelas');
+    }
+
+    public function getKeterangan()
+    {
+        $model = new PembayaranModel();
+        $keterangan = $model->getKeterangan(session()->get('email'));
+        $data = [
+            'keterangan' => $keterangan,
+        ];
+        // dd($data);
+
+        if ($keterangan['keterangan'] == 'Belum dibayar') {
+            return redirect()->to('/keranjang');
+        } else {
+            return redirect()->to('/kelas');
+        }
+        // return view('/landingpage');
     }
 }

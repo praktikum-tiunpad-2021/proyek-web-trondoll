@@ -23,7 +23,7 @@
             <input type="email" name="email" autocomplete="off" value="<?= $users['email'] ?>">
 
             <label>Tanggal Lahir</label>
-            <input type="date" id="date-input" value="<?= $users['tanggal_lahir'] ?>">
+            <input type="date" name="tanggal_lahir" id="date-input" value="<?= $users['tanggal_lahir'] ?>">
 
             <label>Nomor Telepon</label>
             <input type="text" name="no_telp" id="no-telp" autocomplete="off" value="<?= $users['no_telp'] ?>">

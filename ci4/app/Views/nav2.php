@@ -24,9 +24,9 @@
                 </div>
 
                 <div class="main-nav-second">
-                    <div style="display: inline-block; padding: 60px 40px 10px;"><a <?= $isActivePage('/'); ?> href="/login" value="Masuk" style="display: inline-block; font-size: 15px; letter-spacing: 0.14px; width: auto; text-decoration: none; color: #fff;">Masuk</a></div>
+                    <div style="display: inline-block; padding: 60px 40px 10px;"><a <?= $isActivePage('/'); ?> href="/logout" value="Masuk" style="display: inline-block; font-size: 15px; letter-spacing: 0.14px; width: auto; text-decoration: none; color: #fff;">Log Out</a></div>
                     <div style="display: inline-block; padding: 25px 40px 10px;"><a <?= $isActivePage('/'); ?> href="/" style="display: inline-block; font-size: 15px; letter-spacing: 0.14px; width: auto; text-decoration: none; color: #fff;">Beranda</a></div>
-                    <div style="display: inline-block; padding: 25px 40px 10px;"><a href="" style="display: inline-block; font-size: 15px; letter-spacing: 0.14px; width: auto; text-decoration: none; color: #fff;">Konsultasi</a></div>
+                    <div style="display: inline-block; padding: 25px 40px 10px;"><a href="/konsultasi" style="display: inline-block; font-size: 15px; letter-spacing: 0.14px; width: auto; text-decoration: none; color: #fff;">Konsultasi</a></div>
                     <div style="display: inline-block; padding: 25px 40px 10px;"><a <?= $isActivePage('/'); ?>href="/kelas" style="display: inline-block; font-size: 15px; letter-spacing: 0.14px; width: auto; text-decoration: none; color: #fff;">Kelas</a></div>
                     <div style="display: inline-block; padding: 25px 40px 10px;"><a href="/aboutus" style="display: inline-block; font-size: 15px; letter-spacing: 0.14px; width: auto; text-decoration: none; color: #fff;">Tentang Kami</a></div>
                 </div>

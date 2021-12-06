@@ -31,7 +31,6 @@ class KelasModel extends Model
             return $this->findAll();
         } else {
             return $this->where('nama', $nama)->first();
-            // return $this->where(['nama' => $nama])->get()->getResultArray();
         }
     }
 
