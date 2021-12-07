@@ -35,7 +35,9 @@ class Home extends BaseController
 
     public function getKeterangan()
     {
+        $model1 = new UserProfilModel();
+        $data['users'] = $model1->getUsers(session()->get('email'));
 
-        return view('landingpage');
+        return view('\kelas\materi', $data);
     }
 }

@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  font-family: Roboto;
+}
+
+.kotak {
+  margin-top: 120px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+}
+
+#cont {
+  height: 100%;
+  width: 100%;
+  display: flex;
+
+  margin-bottom: 100px;
+}
+
+div.Scroll {
+  padding: 20px;
+  background-color: #304658;
+  width: 15%;
+  height: 300px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align: justify;
+  color: white;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 4%;
+}
+
+.materi {
+  width: 71%;
+  border-style: groove;
+  border-width: 2px;
+  border-color: white;
+  color: white;
+  display: inline-block;
+  vertical-align: top;
+  text-align: justify;
+  padding: 20px;
+  height: 800px;
+}

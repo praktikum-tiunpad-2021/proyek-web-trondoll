@@ -49,7 +49,7 @@ class Pembayaran extends Controller
         // dd($data);
 
         if ($keterangan['keterangan'] == 'Belum dibayar') {
-            return redirect()->to('/keranjang');
+            return redirect()->to('/materikelas');
         } else {
             return redirect()->to('/kelas');
         }
