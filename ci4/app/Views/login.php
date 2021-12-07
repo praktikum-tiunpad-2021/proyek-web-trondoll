@@ -30,8 +30,8 @@
                 <input type="password" name="password" id="password" required value="">
                 <?php if (isset($validation)) : ?>
                     <div class="col-12">
-                        <div class="alert alert-danger" role="alert">
-                            <?= $validation->listErrors() ?>
+                        <div class="alert" role="alert">
+                           <p><?= $validation->getError('password') ?></p>
                         </div>
                     </div>
                 <?php endif; ?>
@@ -78,27 +78,7 @@
                 <div class="container">
                     <h3>Login</h3>
                     <hr>
-                    <?php if (session()->get('success')) : ?>
-                        <div class="alert alert-success" role="alert">
-                            <?= session()->get('success') ?>
-                        </div>
-                    <?php endif; ?>
-                    <form action="/" method="post">
-                        <div class="form-group">
-                            <label for="email">Email Address</label>
-                            <input type="text" class="form-control" name="email" id="email" value="<?= set_value('email') ?>">
-                        </div>
-                        <div class="form-group">
-                            <label for="password">Password</label>
-                            <input type="password" name="password" id="password" class="form-control" value="">
-                        </div>
-                        <?php if (isset($validation)) : ?>
-                            <div class="col-12">
-                                <div class="alert alert-danger" role="alert">
-                                    <?= $validation->listErrors() ?>
-                                </div>
-                            </div>
-                        <?php endif; ?>
+               
                         <div class="row">
                             <div class="col-12 col-sm-4">
                                 <button type="submit" class="btn btn-primary">Login</button>

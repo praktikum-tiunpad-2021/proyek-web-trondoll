@@ -72,3 +72,12 @@ body {
   margin-bottom: 25px;
   width: 50%;
 }
+
+.alert {
+  margin: 0 auto;
+  border-radius: 5px;
+  width: 80%;
+  padding: 20px;
+  color: #721c24;
+  background-color: #f8d7da;
+}

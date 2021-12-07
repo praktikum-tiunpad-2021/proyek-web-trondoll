@@ -52,18 +52,18 @@
                     <input type="number" name="no_telp" id="no_telp" value="<? set_value('no_telp') ?>" style="
                 background-color: transparent;">
                 </div>
-                <div class="sign-in-button">
-                    <input type="submit" name="" value="Registrasi">
-                </div>
-
                 <!-- Validation -->
                 <?php if (isset($validation)) : ?>
                     <div class="col-10">
-                        <div class="alert alert-danger" role="alert">
-                            <?= $validation->listErrors() ?>
+                        <div class="alert" role="alert">
+                           <p> <?= $validation->getError('password_confirm') ?></p>
+                           <p> <?= $validation->getError('email') ?></p>
                         </div>
                     </div>
                 <?php endif; ?>
+                <div class="sign-in-button">
+                    <input type="submit" name="" value="Registrasi">
+                </div>
             </form>
         </div>
     </div>
