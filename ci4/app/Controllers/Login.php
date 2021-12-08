@@ -56,14 +56,11 @@ class Login extends BaseController
             $rules = [
                 'email' => 'required|min_length[6]|max_length[50]|valid_email|is_unique[users.email]',
                 'password' => 'required|min_length[8]|max_length[255]',
-                'password_confirm' => 'validateUser[matches[password]]',
+                'password_confirm' => 'matches[password]',
             ];
             $errors = [
                 'email' => [
                     'is_unique' => 'This Email is already in use'
-                ],
-                'password_confirm' => [
-                    'validateUser' => 'Password and Confirm Password must be match'
                 ]
             ];
             if (!$this->validate($rules, $errors)) {
