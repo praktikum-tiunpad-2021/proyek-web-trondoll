@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="D:\1.kuliah\3.semester3\Pemweb\Praktikum\Project Pemweb\proyek-web-trondoll-1\css\detailkelas.css">
+    <title>Kelas</title>
+</head>
+
+<body>
+    <nav style="box-shadow: red">
+        <div class="container-mui nav-container">
+            <div class="nav-kiri">
+                <img src="D:\1.kuliah\3.semester3\Pemweb\Praktikum\Project Pemweb\proyek-web-trondoll-1\images\logo.png"
+                    alt="" class="nav-log">
+
+                <div class="main-nav">
+                    <div style="display: inline-block; padding: 25px 40px 19px;"><a href=""
+                            style="display: inline-block; font-size: 15px; letter-spacing: 0.14px; width: auto; text-decoration: none; color: #fff;">Beranda</a>
+                    </div>
+                    <div style="display: inline-block; padding: 25px 40px 19px;"><a href=""
+                            style="display: inline-block; font-size: 15px; letter-spacing: 0.14px; width: auto; text-decoration: none; color: #fff;">Keuangan</a>
+                    </div>
+                    <div style="display: inline-block; padding: 25px 40px 19px;"><a href=""
+                            style="display: inline-block; font-size: 15px; letter-spacing: 0.14px; width: auto; text-decoration: none; color: #fff;">Investasi</a>
+                    </div>
+                    <div style="display: inline-block; padding: 25px 40px 19px;"><a href=""
+                            style="display: inline-block; font-size: 15px; letter-spacing: 0.14px; width: auto; text-decoration: none; color: #fff;">Tentang
+                            Kami</a></div>
+                </div>
+
+                <div class="main-nav-second">
+                    <div style="display: inline-block; padding: 60px 40px 10px;"><a href="login.html" value="Masuk"
+                            style="display: inline-block; font-size: 15px; letter-spacing: 0.14px; width: auto; text-decoration: none; color: #fff;">Masuk</a>
+                    </div>
+                    <div style="display: inline-block; padding: 25px 40px 10px;"><a href=""
+                            style="display: inline-block; font-size: 15px; letter-spacing: 0.14px; width: auto; text-decoration: none; color: #fff;">Beranda</a>
+                    </div>
+                    <div style="display: inline-block; padding: 25px 40px 10px;"><a href=""
+                            style="display: inline-block; font-size: 15px; letter-spacing: 0.14px; width: auto; text-decoration: none; color: #fff;">Keuangan</a>
+                    </div>
+                    <div style="display: inline-block; padding: 25px 40px 10px;"><a href=""
+                            style="display: inline-block; font-size: 15px; letter-spacing: 0.14px; width: auto; text-decoration: none; color: #fff;">Investasi</a>
+                    </div>
+                    <div style="display: inline-block; padding: 25px 40px 10px;"><a href=""
+                            style="display: inline-block; font-size: 15px; letter-spacing: 0.14px; width: auto; text-decoration: none; color: #fff;">Tentang
+                            Kami</a></div>
+                </div>
+
+            </div>
+            <div class="nav-kanan">
+                <div class="nav-masuk">
+                    <a href="login.html" value="Masuk">
+                        <p style="text-align: center; justify-content: center; text-decoration: none;">Masuk</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="menu-toggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="img-content"></div>
+
+    <div class="content">
+        <p style="font-size: 30px;">Tentang Kelas</p>
+        <p style="padding-bottom: 10px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem odit accusantium magnam in nisi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem odit accusantium magnam in nisi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem odit accusantium magnam in nisi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem odit accusantium magnam in nisi.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem odit accusantium magnam in nisi</p>
+    </div>
+
+    <div class="content">
+        <p style="font-size: 30px;">Deskripsi</p>
+        <p style="padding-bottom: 10px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem odit accusantium magnam in nisi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem odit accusantium magnam in nisi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem odit accusantium magnam in nisi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem odit accusantium magnam in nisi.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem odit accusantium magnam in nisi</p>
+    </div>
+
+    <div class="content">
+        <p style="font-size: 30px;">Tentang Mentor</p>
+    </div>
+    
+
+    <script lang="javascript" type="text/javascript">
+        const menuToggle = document.querySelector('.menu-toggle input');
+        const section = document.querySelector('.main-nav-second');
+
+        menuToggle.addEventListener('click', function () {
+            section.classList.toggle('slide');
+        });
+    </script>
+</body>
+
+</html>
